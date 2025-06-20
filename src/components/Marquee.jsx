@@ -3,19 +3,20 @@ import MarqueeItem from "./MarqueeItem";
 import image1 from "../assets/images/img1.png";
 import image2 from "../assets/images/img2.png";
 import image3 from "../assets/images/img3.png";
+import image4 from "../assets/images/img4.png";
 
 const Marquee = () => {
   //upper images
   const upperMarquee = [
-    image1,
+    image4,
+    image2,
+    image3,
+    image4,
     image2,
     image3,
     image1,
     image2,
-    image3,
-    image1,
-    image2,
-    image1,
+    image4,
     image3,
     image1,
   ];
@@ -24,12 +25,12 @@ const Marquee = () => {
     image1,
     image2,
     image3,
-    image1,
+    image4,
     image2,
     image3,
     image1,
     image2,
-    image3,
+    image4,
     image1,
     image2,
   ];

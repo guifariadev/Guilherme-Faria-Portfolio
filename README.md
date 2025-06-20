@@ -6,7 +6,7 @@ Welcome to my personal portfolio website, built to showcase my projects, skills,
 
 ## 🚀 Live Website
 
-🔗 [Visit Portfolio](https://guilhermefaria.netlify.app)
+🔗 [Visit Portfolio] (https://guilherme-faria.netlify.app/)
 
 ---
 

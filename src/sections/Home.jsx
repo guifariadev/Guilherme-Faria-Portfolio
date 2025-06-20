@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MdOutlineFileDownload } from "react-icons/md";
 import AutoScrollButton from "../components/AutoScrollButton";
 import BgVideo from "../assets/video/background-home.mp4";
+import cv from "../assets/cv/curriculum-vitae.pdf";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -71,7 +72,8 @@ const Home = () => {
             className="flex space-x-10 justify-center"
           >
             <a
-              href="/path/to/cv.pdf"
+              href= {cv}
+              target="_blank"
               download
               aria-label="Download Curriculum Vitae"
               title="Download Curriculum Vitae"
