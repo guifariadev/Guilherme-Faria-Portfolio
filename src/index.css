@@ -1,0 +1,57 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  /* Body background */
+  body {
+    @apply bg-[#0A0E17];
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom fonts */
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins-ThinItalic";
+    src: url(../fonts/Poppins/Poppins-MediumItalic.ttf) format("truetype");
+  }
+}
+
+@layer components {
+  /* Border styling for about me section */
+  .custom-border {
+    @apply border border-l-sky-700 border-b-sky-700 border-t-sky-800 border-r-sky-800;
+  }
+   /* Backgrounds to about me section*/
+   .bg-gpattern {
+    @apply bg-gradient-to-b from-sky-700/10 to-sky-700/30;
+  }
+  .bg-icon {
+    @apply bg-gradient-to-br from-gray-950 via-gray-950 to-sky-800/10;
+  }
+}
+
+@layer utilities {
+  /* Marquee gradient to projects section */
+  .marquee-gradient {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+}
