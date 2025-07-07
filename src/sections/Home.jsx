@@ -22,6 +22,7 @@ const Home = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute w-full h-full object-cover"
       >
         <source src={BgVideo} type="video/mp4" />
