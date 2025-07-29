@@ -1,38 +1,35 @@
-import React from "react";
 import MarqueeItem from "./MarqueeItem";
 import image1 from "../assets/images/img1.png";
 import image2 from "../assets/images/img2.png";
 import image3 from "../assets/images/img3.png";
 import image4 from "../assets/images/img4.png";
-
+import image5 from "../assets/images/img5.png";
 const Marquee = () => {
   //upper images
   const upperMarquee = [
-    image4,
-    image2,
-    image3,
-    image4,
-    image2,
-    image3,
     image1,
     image2,
-    image4,
     image3,
+    image4,
+    image5,
+    image4,
+    image5,
+    image3,
+    image2,
     image1,
   ];
   //lower images
   const lowerMarquee = [
+    image5,
+    image4,
+    image3,
+    image2,
     image1,
     image2,
     image3,
     image4,
-    image2,
-    image3,
+    image5,
     image1,
-    image2,
-    image4,
-    image1,
-    image2,
   ];
 
   return (

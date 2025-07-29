@@ -4,10 +4,10 @@ import { FaArrowDown, FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import ButtonGoBack from "../components/ButtonGoBack";
-import Project1 from "../assets/images/img4.png"
+import Project1 from "../assets/images/img1.png"
 import Project2 from "../assets/images/img2.png"
-import Project3 from "../assets/images/img1.png"
-import Project4 from "../assets/images/img3.png"
+import Project3 from "../assets/images/img3.png"
+import Project4 from "../assets/images/img4.png"
 import Project5 from "../assets/images/img5.png"
 import Footer from "../components/Footer";
 
@@ -88,7 +88,7 @@ const Card = ({ card }) => {
 >
   {/* Badge "Still in development" */}
   {card.development && (
-    <span className="absolute top-3 left-3 z-10 bg-yellow-500 text-white text-xs sm:text-sm px-2 py-1 rounded shadow-md">
+    <span className="absolute top-3 left-3 z-10 bg-yellow-500 text-white text-xs sm:text-sm px-2 py-1 rounded shadow-md pointer-events-none">
       {card.development}
     </span>
   )}
@@ -136,29 +136,26 @@ const cards = [
   {
     url: Project2,
     id: 2,
-    demoLink: "https://state-agency.netlify.app/",
-    sourceCodeLink: "https://github.com/guifariadev/realstate-agency",
+    demoLink: "https://bit-elements.vercel.app/",
+    sourceCodeLink: "https://github.com/guifariadev/BIT_ELEMENTS",
+    development: "Still in development",
   },
   {
     url: Project3,
     id: 3,
+    demoLink: "https://state-agency.netlify.app/",
+    sourceCodeLink: "https://github.com/guifariadev/realstate-agency",
+  },
+  {
+    url: Project4,
+    id: 4,
     demoLink: "https://zenify.netlify.app/",
     sourceCodeLink: "https://github.com/guifariadev/zenify",
   },
   {
-    url: Project4,
-    id: 3,
+    url: Project5,
+    id: 5,
     demoLink: "https://thetask-manager.netlify.app/",
     sourceCodeLink: "https://github.com/guifariadev/task-manager",
   },
-  {
-    url: Project5,
-    id: 4,
-    demoLink: "https://rockandpapergame.netlify.app/",
-    sourceCodeLink: "https://github.com/guifariadev/rockpaperscissors-game",
-  },
-  // {
-  //   url: "/imgs/abstract/5.jpg",
-  //   id: 5,
-  // },
 ];
