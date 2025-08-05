@@ -8,15 +8,15 @@ const Marquee = () => {
   //upper images
   const upperMarquee = [
     image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image4,
-    image5,
     image3,
     image2,
+    image4,
     image1,
+    image2,
+    image5,
+    image3,
+    image2,
+    image4,
   ];
   //lower images
   const lowerMarquee = [
