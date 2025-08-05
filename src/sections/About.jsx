@@ -1,15 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import MusicPlayer from "../components/MusicPlayer";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import ReactImg from "../assets/icons/react.svg";
-import GitImg from "../assets/icons/git.svg";
-import HtmlImg from "../assets/icons/html.svg";
-import CssImg from "../assets/icons/css.svg";
-import JsImg from "../assets/icons/js.svg";
-import NodeImg from "../assets/icons/node.svg";
-import TailwindImg from "../assets/icons/tailwind.svg";
-import FigmaImg from "../assets/icons/figma.svg";
+import MarqueeTechs from "../components/MarqueeTechs";
 import NoteImg from "../assets/images/notebook-code.jpg";
 
 const About = () => {
@@ -39,22 +31,10 @@ const About = () => {
           whileInView={{ opacity: 1 }} 
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} 
           viewport={{ once: true }}
-          className="row-span-4 lg:row-span-3 bg-gpattern custom-border rounded-3xl text-white flex flex-col justify-center items-center"
+          className="relative row-span-4 lg:row-span-3 bg-gpattern custom-border rounded-3xl text-white flex flex-col items-center overflow-hidden"
         >
-          <h1 className="text-2xl lg:text-4xl text-center font-bold">Techs</h1>
-          <div className="grid grid-cols-2 h-3/4 w-2/4 gap-2 mt-8 place-items-center mb-6"> 
-            {[ReactImg, TailwindImg, HtmlImg, CssImg, JsImg, NodeImg, GitImg, FigmaImg].map((img, index) => (
-              <motion.img 
-                key={index} 
-                src={img} 
-                className="size-16 p-3 bg-icon rounded-2xl"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
-                viewport={{ once: true }}
-              />
-            ))}
-          </div>
+          <h1 className="absolute text-2xl lg:text-4xl text-center font-bold top-16">Techs</h1>
+          <MarqueeTechs />
         </motion.div>
         {/* music grid */}
         <motion.div 
